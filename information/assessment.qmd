@@ -6,9 +6,9 @@
 In order to receive credit for the course, each person must complete a project about a selected problem using R. A project may be undertaken by a group of 1-3 people. The recommended group size is 2. The project report and the oral examination shall demonstrate that the intended learning outcomes of the [course](/information/overview.qmd) are reached. 
 
 
-Please fill this Google sheet for the group project:
+Please fill this Excel sheet for the group project:
 
-<center>[LINK](https://docs.google.com/spreadsheets/d/1f-UrPNahYLqjcTAoHOrhbr95mFoPksRxuwZTlJRRYgc/edit?usp=sharing)</center>
+<center>[LINK](https://ulcampus-my.sharepoint.com/:x:/r/personal/maeve_upton_ul_ie/Documents/Documents/MS6071_course/MS6071%20-%20Projects.xlsx?d=w878cf7a5e9a949b995070b664338e0d9&csf=1&web=1&e=s8UVev)</center>
 
 
 
@@ -28,7 +28,7 @@ The project report must be written in English, with an English abstract. Each pr
 
 ## Schedule
 
-**The report must be sent in Friday, November 22 before 5pm**. A pdf-file of the report and source code must be sent by email at **steven.golovkine@ul.ie** with **MS6071** as object.
+**The report must be sent in Friday, November 22 before 5pm**. A pdf-file of the report and source code must be sent by email at **maeve.upton@ul.ie** with **MS6071** as object.
 
 | Description | Date deadline | Hour deadline |
 |:------:|--------:|--------:|
