@@ -2,22 +2,17 @@
 
 ## Description
 
-
-In order to receive credit for the course, each person must complete a project about a selected problem using R. A project may be undertaken by a group of 1-3 people. The recommended group size is 2. The project report and the oral examination shall demonstrate that the intended learning outcomes of the [course](/information/overview.qmd) are reached. 
-
+In order to receive credit for the course, each person must complete a project about a selected problem using R. A project may be undertaken by a group of 1-3 people. The recommended group size is 2. The project report and the oral examination shall demonstrate that the intended learning outcomes of the [course](/information/overview.qmd) are reached.
 
 Please fill this Excel sheet for the group project:
 
 <center>[LINK](https://ulcampus-my.sharepoint.com/:x:/r/personal/maeve_upton_ul_ie/Documents/Documents/MS6071_course/MS6071%20-%20Projects.xlsx?d=w878cf7a5e9a949b995070b664338e0d9&csf=1&web=1&e=s8UVev)</center>
 
-
-
 Each person will be required to:
 
-* Give a 8 minutes (group) presentation + 2 minutes of questions of her/his problem.
+-   Give a 8 minutes (group) presentation + 2 minutes of questions of her/his problem.
 
-* Hand in a project report and R code.
-
+-   Hand in a project report and R code.
 
 On Week 2 topics will be selected, and groups will be formed. Ideas for project topics can be seen below. You are free to create you own groups, possibly consisting of one person only. Each group will have time during the lectures to work on the chosen problem. Each group has to present their problem on Week 8 and their final results on Week 11. I will give feedback on Week 12. The purpose of these presentations is for the participants and teacher to influence and inspire each other such that maybe a better report can be written.
 
@@ -25,106 +20,96 @@ On Week 2 topics will be selected, and groups will be formed. Ideas for project 
 
 The project report must be written in English, with an English abstract. Each project must fill at most 15 pages (1 person) or 20 pages (2-3 persons), appendix and source code not included. The report's cover page should include title in English, name(s), student's ID. The project report must be compiled using Quarto or Latex. A Quarto template is available [here](/information/templates/template_quarto.zip) and a Latex template is available [here](/information/templates/template_latex.zip). Program files/code should **not** be included as appendices in the report but be sent as separate files.
 
-
 ## Schedule
 
-**The report must be sent in Friday, November 22 before 5pm**. A pdf-file of the report and source code must be sent by email at **maeve.upton@ul.ie** with **MS6071** as object.
+**The report must be sent in Friday, November 22 before 5pm**. A pdf-file of the report and source code must be sent by email at **maeve.upton\@ul.ie** with **MS6071** as object.
 
-| Description | Date deadline | Hour deadline |
-|:------:|--------:|--------:|
-| Proposal presentation | 29/10/24 | 9:00am |
-| Manuscript + Code | 22/11/24 | 5:00pm |
-
+|      Description      | Date deadline | Hour deadline |
+|:---------------------:|--------------:|--------------:|
+| Proposal presentation |      29/10/24 |        9:00am |
+|   Manuscript + Code   |      22/11/24 |        5:00pm |
 
 ## Grading Criteria
 
 The proposal will be graded on the following criteria:
 
-* Clear statement of objectives and purpose.
+-   Clear statement of objectives and purpose.
 
-* Quality and relevance of sources used.
+-   Quality and relevance of sources used.
 
-* Demonstrates a clear understanding of the topic.
+-   Demonstrates a clear understanding of the topic.
 
-* Critical thinking and analysis of the information presented.
+-   Critical thinking and analysis of the information presented.
 
-* Clear and concise writing.
+-   Clear and concise writing.
 
-* Adherence to required formatting guidelines.
+-   Adherence to required formatting guidelines.
 
-* Implementation in R.
+-   Implementation in R.
 
-* Clean R code.
+-   Clean R code.
 
-* Reproducibilty of the R code.
+-   Reproducibilty of the R code.
 
-
-## Late Submission 
+## Late Submission
 
 No late submission will be accepted. The grade will be decreased by 25% if the submission is handed the same day but late, and by 50% if the submission in handed the next day.
-
 
 ## Examples of project
 
 Below you will find suggestions for topics you may consider in your project. You may also consider other topics. Please consult with me beore the final topic is chosen. In general chose a topic you are familar with. In all cases, you have to provide your analysis in R.
 
-
 Projects can roughly be put in three categories:
 
-* Pick a dataset and create visualization / Shiny app.
+-   Pick a dataset and create visualization / Shiny app.
 
-* Pick a research paper and reimplement the analysis.
+-   Pick a research paper and reimplement the analysis.
 
-* Perform a simulation study on a topic of interest. 
+-   Perform a simulation study on a topic of interest.
 
 Here are some examples of projects:
 
-* For a data-based project:
-    - [Weather](https://github.com/taohan10200/WEATHER-5K).
-    - [Marine](https://data.marine.copernicus.eu/products).
-    - [Anatomy](https://physionet.org/about/database/).
-    - [Physics](http://opendata.cern.ch).
-    - [Public sector](https://data.gov.ie).
-    - ...
-
-* For a research-based project:
-    - Quantile regression [@soomro2024bayesian].
-    - Time series modelling [@shoari2024vector].
-    - Missing data [@mcneish2017missing].
-    - Functional data [@benkoCommonFunctionalPrincipal2009].
-    - ...
-
-* For a simulation-based project:
-    - Airline yield-management problems [@lautenbacher1999underlying],[@talluri2004revenue].
-    - Optimal prices of a job shop with a single work station [@johansen1991optimal].
-    - Study of insurance contract [@palfrey1985repeated].
-    - ...
-
+-   For a data-based project:
+    -   [Weather](https://github.com/taohan10200/WEATHER-5K).
+    -   [Marine](https://data.marine.copernicus.eu/products).
+    -   [Anatomy](https://physionet.org/about/database/).
+    -   [Physics](http://opendata.cern.ch).
+    -   [Public sector](https://data.gov.ie).
+    -   ...
+-   For a research-based project:
+    -   Quantile regression [@soomro2024bayesian].
+    -   Time series modelling [@shoari2024vector].
+    -   Missing data [@mcneish2017missing].
+    -   Functional data [@benkoCommonFunctionalPrincipal2009].
+    -   ...
+-   For a simulation-based project:
+    -   Airline yield-management problems [@lautenbacher1999underlying],[@talluri2004revenue].
+    -   Optimal prices of a job shop with a single work station [@johansen1991optimal].
+    -   Study of insurance contract [@palfrey1985repeated].
+    -   ...
 
 ## Last year projects
 
-* Review of global agriculture data for famine and obesity using the programming language R
+-   Review of global agriculture data for famine and obesity using the programming language R
 
-* EPL data analysis: From raw data to predictive insights
+-   EPL data analysis: From raw data to predictive insights
 
-* Cricket data analysis with R
+-   Cricket data analysis with R
 
-* Statistical analysis of housing in Ireland
+-   Statistical analysis of housing in Ireland
 
-* Image classification
+-   Image classification
 
-* Exploring health and well-being: A comprehensive statistical analysis of health indicators using R
-
+-   Exploring health and well-being: A comprehensive statistical analysis of health indicators using R
 
 ## Miscellaneous
 
-::: {.callout-important}
+::: callout-important
 ## Important remarks
 
-* Presence in class is strongly encouraged and the presence will be recorded.
+-   Presence in class is strongly encouraged and the presence will be recorded.
 
-* Plagiarism is presenting another person’s work or ideas as your own. Plagiarism is a serious breach of ethics and is not taken lightly. It undermines academic integrity and it will not be tolerated.
-
+-   Plagiarism is presenting another person’s work or ideas as your own. Plagiarism is a serious breach of ethics and is not taken lightly. It undermines academic integrity and it will not be tolerated.
 :::
 
 I will carefully consider the student responses to the evaluation of my course and their implications for course development. It is also common practice to discuss informally with students how the course and their mastery of it are progressing. Thank you in advance for your contribution!
