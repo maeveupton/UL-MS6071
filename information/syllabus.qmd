@@ -6,4 +6,4 @@
 
 |           | Day     | Time             | Room   |
 |-----------|---------|------------------|--------|
-| Tutorials | Tuesday | 9:00am - 11:00am | CSG025 |
+| Tutorials | Tuesday | 9:00am - 11:00am | ? |
