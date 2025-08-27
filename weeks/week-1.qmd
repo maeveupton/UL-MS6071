@@ -7,7 +7,6 @@ editor: visual
 
 Prior to diving into the materials, ensure that you have R and RStudio installed. You can find instructions on their installation [here](/information/faq.qmd). If you need any help, don't hesitate to contact me.
 
-
 ## Prepare
 
 📖 [Quick history of R](/contents/week-1/00_History_of_R.qmd)

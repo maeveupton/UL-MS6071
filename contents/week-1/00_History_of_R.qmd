@@ -8,11 +8,9 @@ engine: knitr
 R is an open source version of the S language. It has been created by R. Ihaka and R. Gentleman in 1993. It has been released under the GNU General Public License (GPL) and is maintained by the R Core Team.
 
 ::: {#fig-creators}
-
 ![](images/RossIhaka_RobertGentleman.jpg)
 
 The creators of R: Ihaka and Gentleman.
-
 :::
 
 ## The R philosophy
@@ -29,9 +27,7 @@ R has extremely powerful functionality for statistical modelling and data analyt
 
 And it's open-source!
 
-
-::: {#fig-art layout-ncol=2}
-
+::: {#fig-art layout-ncol="2"}
 ![Interacting paths.](./images/pollen_small.jpg){#fig-path}
 
 ![Bound.](./images/dreamlike_small.jpg){#fig-bound}
@@ -43,10 +39,9 @@ R Art by [Danielle Navarro](https://art.djnavarro.net/).
 
 For further information:
 
-- Official [R website](https://www.r-project.org).
+-   Official [R website](https://www.r-project.org).
 
-- The Wikipedia [page](https://en.wikipedia.org/wiki/R_(programming_language)).
-
+-   The Wikipedia [page](https://en.wikipedia.org/wiki/R_(programming_language)).
 
 <br><br>
 
