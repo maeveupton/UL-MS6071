@@ -22,12 +22,12 @@ The project report must be written in English, with an English abstract. Each pr
 
 ## Schedule
 
-**The report must be sent in Friday, November 22 before 5pm**. A pdf-file of the report and source code must be sent by email at **maeve.upton\@ul.ie** with **MS6071** as object.
+**The report must be sent in Friday, November ?? before 5pm**. A pdf-file of the report and source code must be sent by email at **maeve.upton\@ul.ie** with **MS6071** as object.
 
 |      Description      | Date deadline | Hour deadline |
 |:---------------------:|--------------:|--------------:|
-| Proposal presentation |      29/10/24 |        9:00am |
-|   Manuscript + Code   |      22/11/24 |        5:00pm |
+| Proposal presentation |      ??/10/24 |        9:00am |
+|   Manuscript + Code   |      ??/11/24 |        5:00pm |
 
 ## Grading Criteria
 
@@ -57,7 +57,7 @@ No late submission will be accepted. The grade will be decreased by 25% if the s
 
 ## Examples of project
 
-Below you will find suggestions for topics you may consider in your project. You may also consider other topics. Please consult with me beore the final topic is chosen. In general chose a topic you are familar with. In all cases, you have to provide your analysis in R.
+Below you will find suggestions for topics you may consider in your project. You may also consider other topics. Please consult with me before the final topic is chosen. In general chose a topic you are familar with. In all cases, you have to provide your analysis in R.
 
 Projects can roughly be put in three categories:
 
