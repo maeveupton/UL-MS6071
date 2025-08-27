@@ -22,7 +22,7 @@ The project report must be written in English, with an English abstract. Each pr
 
 ## Schedule
 
-**The report must be sent in Friday, November ?? before 5pm**. A pdf-file of the report and source code must be sent by email at **maeve.upton\@ul.ie** with **MS6071** as object.
+The report must be submitted **via UL [Brightspace](https://www.ul.ie/brightspace) by Friday, November ?? before 5pm**. A pdf-file of the report and source code must submitted.
 
 |      Description      | Date deadline | Hour deadline |
 |:---------------------:|--------------:|--------------:|
