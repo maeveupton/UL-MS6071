@@ -2,7 +2,7 @@
 
 ## Description
 
-In order to receive credit for the course, each person must complete a project about a selected problem using R. A project may be undertaken by a group of 1-3 people. The recommended group size is 2. The project report and the oral examination shall demonstrate that the intended learning outcomes of the [course](/information/overview.qmd) are reached.
+In order to receive credit for the course, each person must complete a project about a selected problem using R. A project may be undertaken by a group of 2-3 people. The recommended group size is 2. The project report and the oral examination shall demonstrate that the intended learning outcomes of the [course](/information/overview.qmd) are reached.
 
 Please fill this Excel sheet for the group project:
 
