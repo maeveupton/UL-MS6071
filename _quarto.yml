@@ -5,13 +5,13 @@ website:
   page-navigation: false
   title: "R for Statistical Data Science"
   site-url: "https://r-programming-course.netlify.app"
-  repo-url: https://github.com/StevenGolovkine/MSDSSLTFA_R_course
+  repo-url: https://github.com/maeveupton/UL-MS6071
   repo-actions: [issue, edit]
   open-graph: true
 
   page-footer:
     right: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
-    left: "&copy; Copyright 2023, Steven Golovkine"
+    left: "&copy; Copyright 2023, Steven Golovkine & Maeve Upton"
     background: "#fdf5e6"
 
   sidebar:
@@ -22,7 +22,7 @@ website:
     toc-location: right
     tools:
       - icon: github
-        href: https://github.com/StevenGolovkine/MSDSSLTFA_R_course
+        href: https://github.com/maeveupton/UL-MS6071
         text: "GitHub organization"
     style: "docked"
     search: true
