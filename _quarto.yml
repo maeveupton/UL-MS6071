@@ -28,24 +28,6 @@ website:
     search: true
     collapse-level: 1
     contents:
-      - section: "Course information"
-        contents:
-          - href: information/overview.qmd
-            text: Overview
-          - href: information/syllabus.qmd
-            text: Information
-          - href: information/assessment.qmd
-            text: Assessment
-          - href: information/support.qmd
-            text: Support
-          - href: index.qmd
-            text: Topics
-          - href: information/links.qmd
-            text: Useful links
-          - href: information/faq.qmd
-            text: FAQ
-          - href: information/update.qmd
-            text: Updates
       - section: "Topics"
         contents:
           - href: weeks/week-1.qmd

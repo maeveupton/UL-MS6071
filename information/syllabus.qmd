@@ -1,9 +1,0 @@
-# Information
-
-<br>
-
-## Course info
-
-|           | Day     | Time             | Room |
-|-----------|---------|------------------|------|
-| Tutorials | Tuesday | 9:00am - 11:00am | ?    |
