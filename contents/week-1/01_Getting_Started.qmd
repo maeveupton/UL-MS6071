@@ -3,17 +3,17 @@ title: "Getting started with R and RStudio"
 engine: knitr
 ---
 
-## Using R
+## Using R via Command Line and Scripts
 
-The primary way to use R is through a command-line interface. To access the R
-console via a terminal, simply enter the `R` command. To create an R script,
-open your preferred text editor and save the file with a `.R` extension, for
-example `script.R`. The script can then be executed using the command:
+## 1. Accessing the R console
+
+Open a terminal (Command Prompt on Windows, Terminal on Mac/Linux) and type:
 
 ```{bash}
 #| eval: false
-Rscript script.R
+R
 ```
+This launches the R console, where you can type and execute R commands interactively.
 
 ::: {#fig-r-terminal}
 ![](./images/r_terminal.png)
@@ -21,7 +21,35 @@ Rscript script.R
 R console in a terminal.
 :::
 
-## Using R with Rgui
+## 2. Creating an R Script
+
+Open your preferred text editor (e.g. [VS Code for mac](https://code.visualstudio.com/docs/?dv=osx), Notepad, [Notepad++ for Windows](https://notepad-plus-plus.org/downloads/), Rstudio). 
+
+Write your R code and save file with a .R extension. 
+
+## 3. Executing the R script in the Terminal
+
+Navigate to the directory where your script is saved:
+
+```{bash}
+#| eval: false
+cd path/to/your/folder
+```
+
+Replace `path/to/your/folder` with the actual path where your script.R is saved.
+
+- On Windows, paths might look like `C:\Users\YourName\Documents\Rscripts`
+
+- On Mac/Linux, paths might look like `/Users/YourName/Documents/Rscripts`
+
+```{bash}
+#| eval: false
+Rscript script.R
+```
+
+
+
+## 4. Using R with Rgui
 
 Rgui is a program that is installed alongside R when you install it. It is the
 standard R user interface. But nobody uses it...
@@ -32,7 +60,7 @@ standard R user interface. But nobody uses it...
 R GUI on macOS.
 :::
 
-## Using R with RStudio
+## Using R with RStudio - Our focus in this course
 
 RStudio is an integrated development environment (IDE) designed primarily for
 running R code. It adds many more features and tools to R that allow us to

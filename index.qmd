@@ -7,6 +7,6 @@ tbl-colwidths: [5,5,5,5,5,5]
 
 This page contains different topics related to R for statistical data science. The content covers a range of subjects that are fundamental to understanding and applying R in the context of data analysis and statistics. While these topics offer a broad overview, they are not exhaustive, and you may encounter other areas that are equally compelling and relevant to your work in data science.
 
-| Topic | Prepare | MCQ | Lab | Lab solutions | Source code |
+| Topic | Key Notes | MCQ | Lab | Lab solutions | Source code |
 |----|:--:|:--:|:--:|:--:|:--:|
 | R Basics | [🖥️](/weeks/week-1.qmd "Contents week 1"){aria-label="Contents week 1"} | [📋](/questionnaire/qcm-week-1.qmd "MCQ Week 1"){aria-label="MCQ Week 1"} | [💻](/labs/lab-week-1.qmd "Labs Week 1"){aria-label="Labs Week 1"} | [💻](/labs/solutions/week-1.R "Labs Solution Week 1"){aria-label="Labs Sol Week 1"} | [🧑‍💻](/contents/week-1/source/all_code_chunks.R "Source Code Week 1"){aria-label="Source Code Week 1"} |
