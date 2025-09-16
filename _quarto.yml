@@ -11,7 +11,7 @@ website:
 
   page-footer:
     right: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
-    left: "&copy; Copyright 2023, Steven Golovkine & Maeve Upton"
+    left: "&copy; Copyright 2025, Steven Golovkine & Maeve Upton"
     background: "#fdf5e6"
 
   sidebar:
