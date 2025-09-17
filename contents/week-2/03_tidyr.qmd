@@ -60,7 +60,7 @@ df <- tribble(
 ```{r}
 #| class-output: outputcode
 #| eval: true
-df |> pivot_longer(
+df %>%  pivot_longer(
   cols = c(maths, physics),
   names_to = 'course',
   values_to = 'grade'
@@ -86,7 +86,7 @@ df <- tribble(
 ```{r}
 #| class-output: outputcode
 #| eval: true
-df |> pivot_wider(
+df  %>%  pivot_wider(
   names_from = 'course',
   values_from = 'grade'
 )
@@ -110,7 +110,7 @@ df <- tribble(
   'Charlie',   '8/16/14'
 )
 
-df |> separate_wider_delim(
+df %>% separate_wider_delim(
   cols = grades,
   delim = '/',
   names = c('maths', 'physics', 'french')

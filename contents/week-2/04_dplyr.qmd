@@ -38,7 +38,7 @@ Almost all data analytics projects will require us to use $5$ basic `dplyr` verb
 Note that the `filter()` and `arrange()` functions work on the rows of a data frame while the `select()`, `mutate()` and `summarise()` functions manipulate the columns.
 :::
 
-Another (very) useful verb is `group_by()`. This performs each of the previous operations by different strata as given by categories or groups (e.g. by notes in the wine quality dataset). The pipe operator, `|>` (default R operator since 4.1) or `%>%` (tidyverse operator), is used to connect several of these verbs together into a pipeline.
+Another (very) useful verb is `group_by()`. This performs each of the previous operations by different strata as given by categories or groups (e.g. by notes in the wine quality dataset). The pipe operator, `%>%` (default R operator since 4.1) or `%>%` (tidyverse operator), is used to connect several of these verbs together into a pipeline.
 
 ::: {.callout-note appearance="simple"}
 Note that R 4.1 introduced a native pipe operator `|>`. It mostly replaced the tidyverse operator since. See [here](https://www.tidyverse.org/blog/2023/04/base-vs-magrittr-pipe) for an article on the differences between the two.
