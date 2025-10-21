@@ -34,6 +34,15 @@ website:
             text: "1 - R Basics"
           - href: weeks/week-2.qmd
             text: "2 - Tidyverse" 
+          - href: weeks/week-3.qmd
+            text: "3 - ETL" 
+          - href: weeks/week-4.qmd
+            text: "4 - Data visualisation" 
+          - href: weeks/week-5.qmd
+            text: "5 - Reproducibility" 
+          - href: weeks/week-6.qmd
+            text: "6 - Interactivity" 
+
 
 
 bibliography: bibliography.bib
