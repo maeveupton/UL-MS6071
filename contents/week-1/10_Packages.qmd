@@ -3,14 +3,13 @@ title: "Packages"
 engine: knitr
 ---
 
-<br>
-Much of R functionality is provided via packages. Packages are a collection of functions, data and documentation that are created to perform a particular task(s). Some packages are part of the base R installation (e.g., `base`, `mgcv`, `nlme`, `stats`, ...). Others can be downloaded and installed from [CRAN](https://cran.r-project.org/web/packages/available_packages_by_name.html). Packages can be created and shared by anyone in the R community.
+<br> Much of R functionality is provided via packages. Packages are a collection of functions, data and documentation that are created to perform a particular task(s). Some packages are part of the base R installation (e.g., `base`, `mgcv`, `nlme`, `stats`, ...). Others can be downloaded and installed from [CRAN](https://cran.r-project.org/web/packages/available_packages_by_name.html). Packages can be created and shared by anyone in the R community.
 
 ## Downloading and installing packages
 
 There are two steps when using additional packages:
 
-1. Download and install the package
+1.  Download and install the package
 
 ```{r}
 #| eval: false
@@ -18,7 +17,7 @@ There are two steps when using additional packages:
 install.packages("package_name")
 ```
 
-2. Load the package in R
+2.  Load the package in R
 
 ```{r}
 #| eval: false
@@ -34,7 +33,6 @@ In RStudio, we also have the option of using the `Packages` tab and clicking on 
 Install package.
 :::
 
-
 In the pop-up, type in the package name (without quotes), make sure the `Install dependencies` box is ticked and click `Install`.
 
 ::: {#fig-r-install_popup}
@@ -42,7 +40,6 @@ In the pop-up, type in the package name (without quotes), make sure the `Install
 
 Installation pop-up window.
 :::
-
 
 ## Loading packages
 
@@ -61,7 +58,6 @@ We usually have a series of these commands at the top of a script file, loading 
 
 Loaded package.
 :::
-
 
 ## Updating packages
 
@@ -104,7 +100,7 @@ MASS::select(...)   # For the MASS function
 
 ## Additional resources
 
-- R manual by the R Core Team, [Section 13 on packages](https://cran.r-project.org/doc/manuals/r-release/R-intro.html#Packages).
+-   R manual by the R Core Team, [Section 13 on packages](https://cran.r-project.org/doc/manuals/r-release/R-intro.html#Packages).
 
 <br><br>
 
