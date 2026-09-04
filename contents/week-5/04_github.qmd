@@ -1,0 +1,39 @@
+---
+title: "Github"
+engine: knitr
+---
+
+<br>
+
+GitHub is an online open-source platform for building, storing and collaborating on software projects. It is based on Git, an open-source version control system that keeps track of changes to files and code.
+
+GitHub allows you to store your Git projects, called repositories, in the cloud. It also provides tools for collaboration, version control and sharing your work with others.
+
+## Create a Github Account
+
+1. Go to Github
+
+2. Select Sign up and create an account
+
+3. Choose a suitable username - this will be visible to others
+
+4. Verify your email address when prompted
+
+5. Sign into Github
+
+
+You will use Github throughout this module to store and submit your R code and projects.
+
+
+
+
+
+## Additional resources
+
+* Github Instruction [website](https://docs.github.com/en/get-started/start-your-journey).
+
+<br><br>
+
+::: {style="font-size: 0.875em;"}
+[Back](/weeks/week-5.qmd) ⏎
+:::

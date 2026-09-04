@@ -5,6 +5,112 @@ engine: knitr
 
 <br>
 
+By the end of this lab, you should be able to:
+
+- Create variables and vectors in R.
+
+- Use indexing and logical operators.
+
+- Work with lists and data frames.
+
+- Write basic functions.
+
+- Use if statements and for loops.
+
+## Question 1
+
+Use R to calculate:
+
+(a) 15 + 8
+
+(b) 20 - 7
+
+(c) 6 * 4
+
+(d) 25/5
+
+(e) 10 + 6/2
+
+(f) (10 + 6)/2
+
+## Question 2
+
+Create a variable called age containing your age, then calculate your age next year and your age in five years.
+
+## Question 3
+
+Create the following vector:
+
+scores <- c(45, 67, 82, 91, 56)
+
+Use R to find:
+
+(a) The number of values
+
+(b) The largest value
+
+(c) The second value
+
+(d) All the scores greater than 70
+
+(e) Scores that are greater than 50 and less than 90
+
+(f) Calculate the mean score
+
+## Question 4
+
+Create the following list:
+
+student <- list(
+    name = "Alice",
+    age = 22,
+    grades = c(75, 83, 68, 91),
+    passed = TRUE
+)
+
+(a) Extract the student's name
+
+(b) Extract the grades
+
+(c) Extract the third grade
+
+(d) Add a course element containing "Statistics"
+
+
+## Question 5
+
+Write a function called square_number() that takes a number and returns its square.
+
+## Question 6 
+
+Write a for loop that prints the numbers from 1 to 10.
+
+Then modify it to print only the even numbers.
+
+
+## Question 7
+
+Create the following data frame:
+
+student_records <- data.frame(
+    student_id = 1:4,
+    name = c("Alice", "Bob", "Cathy", "David"),
+    age = c("23", "22", "21", "24"),
+    grade = c(75, 88, 79, 91)
+)
+
+Use R to:
+
+(a) Display the name column
+
+(b) Find number of rows
+
+(c) Add a result column containing "Pass" or "Fail"
+
+
+
+## Try this question at home
+
 The objective of the tutorial is to familiarize you with fundamental R commands. To achieve this, we will create a basic version of the Hangman game. For this simple version, we will let R to chooses the word to guess.
 
 Rules of the game versus the computer:

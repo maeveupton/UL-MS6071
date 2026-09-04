@@ -42,7 +42,14 @@ website:
             text: "5 - Reproducibility" 
           - href: weeks/week-6.qmd
             text: "6 - Interactivity" 
-
+          - href: weeks/week-7.qmd
+            text: "7 - Memory Issues" 
+          - href: weeks/week-8.qmd
+            text: "8 - Simulation"
+          - href: weeks/week-9.qmd
+            text: "9 - Code debugging"
+          - href: weeks/week-10.qmd
+            text: "10 - C++"
 
 
 bibliography: bibliography.bib

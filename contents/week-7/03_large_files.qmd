@@ -1,0 +1,264 @@
+---
+title: "Dealing with large files"
+engine: knitr
+---
+
+<br>
+Large files are files that are too big for an R matrix. R matrices are limited to $2^{31} - 1 \sim 2.1$ billion elements and are likely to exceed the available RAM before reaching this limit anyway. Do not even try to open it with Excel! In this section, we will see what we can do when we have such a massive amount of data. 
+
+```{r}
+#| class-output: outputcode
+#| eval: true
+#| include: false
+library(tidyverse)
+```
+
+## Using bash scripting
+
+Bash scripting tools are very useful when working on data analysis. Everyone that wants to work within this field should get familiar with these tools. You can access to a **terminal** to run bash command within RStudio from the Terminal pane (next to the Console pane).  
+
+::: {.callout-note appearance="simple"}
+Remember, in RStudio, the **Console** pane allows you to run R command while the **Terminal** pane allows you to run bash command.
+:::
+
+We will see some of the most used bash commands to manipulate data. For more information on bash scripting, you can refer to this [tutorial](https://linuxconfig.org/bash-scripting-tutorial-for-beginners). The most usuful command is the `man` command. This command is used to open the manual page of the given command. For example, `man cut` will open the manual page of the `cut` command.
+
+### Print the file
+
+The commands `cat`, `head` and `tail` can be used to print part of the files. By default, the `cat` command will print all the lines of the file, the `head` command will print the $10$ first lines and the `tail` command will print the $10$ last lines. We can choose the number of lines displayed using the `-n` option.
+
+::: {.callout-note appearance="simple"}
+
+## Example
+
+For this example and the following, we assume that the `airports.csv` file is in the `source` in our current directory. This file contains information on all the airports in the US. You can find the data [herer](./source/airports.csv).
+
+```{bash}
+#| class-output: outputcode
+#| eval: true
+head source/airports.csv
+```
+
+```{bash}
+#| class-output: outputcode
+#| eval: true
+tail -n 2 source/airports.csv
+```
+
+:::
+
+### Sorting and filtering
+
+To sort a csv file using a particular columns, we simply use the `sort` command. This command has two main options:
+
+* The `-t` to define the column seperator. For csv file, it will usually be `,`.
+
+* The `-k` to define the column to sort on. 
+
+::: {.callout-note appearance="simple"}
+
+## Example
+
+To sort the dataset using the `City` columns (third columns), we will use:
+
+```{bash}
+#| class-output: outputcode
+#| eval: true
+sort -t, -k3 source/airports.csv | head -n 5
+```
+
+:::
+
+We can also filter by row using the command `awk` and by columns using the command `cut`. Similarly to the `sort` function, we need to define the delimiter of the file (`-F` for the `awk` command and `-d` for the `cut` command).
+
+::: {.callout-note appearance="simple"}
+
+## Example
+
+To filter the rows where the airports is in California (fourth column), we will use:
+
+```{bash}
+#| class-output: outputcode
+#| eval: true
+awk -F, '$4 = "CA"' source/airports.csv | head -n 5
+```
+
+:::
+
+
+::: {.callout-note appearance="simple"}
+
+## Example
+
+To get only the latitude (sixth column) and longitude (seventh column) in the data, we will use:
+
+```{bash}
+#| class-output: outputcode
+#| eval: true
+cut -f6,7 -d, source/airports.csv | head -n 5
+```
+
+:::
+
+### Some statistics
+
+The `cut` command combines with other commands, such as `sort`, `uniq`, `wc` or `grep`, can be used to derive some statistics on the dataset.
+
+::: {.callout-note appearance="simple"}
+
+## Example
+
+To count the number of airports in each state, we can use:
+```{bash}
+#| class-output: outputcode
+#| eval: true
+cut -f4 -d, source/airports.csv | sort | uniq -c | head -n 5
+```
+
+The `cut` command is used to select the columns with the states, then we `sort` this column alphabetically and finally, we return the count `-c` of each state.
+
+:::
+
+You remarked the `|` sign. This is the pipe operator in bash (remember in R, this is `|>` or `%>%`). It gives the output of the left hand side as the input of the right hand side.
+
+::: {.callout-note appearance="simple"}
+
+## Example
+
+To remove the lines with `NA` values in the fourth columns:
+```{bash}
+#| class-output: outputcode
+#| eval: true
+cut -f4 -d, source/airports.csv | grep -v NA | head -n 5
+```
+
+:::
+
+::: {.callout-note appearance="simple"}
+
+## Example
+
+To count the number of unique elements in a columns:
+```{bash}
+#| class-output: outputcode
+#| eval: true
+cut -f4 -d, source/airports.csv| tail -n +2 | sort | uniq | wc -l
+```
+
+The `tail -n +2` command is used to remove the first line of the file and the `wc -l` is used to count the lines. Pay attention that it counts everything, including the `NA`.
+
+:::
+
+## Using database connection and lazy query
+
+This part is adapted from Alex Gold [article](https://rviews.rstudio.com/2019/07/17/3-big-data-strategies-for-r/).
+
+In cases where the CSV file is too large to be fitted in R's memory, a practical solution is to create a database, establish a connection with it, and then, without the need to load the entire data into memory, utilise `dplyr` to query to the database. While we will employ an SQLite database for this example, the approach remains the same across various database systems.
+
+The `dplyr` package is a great resource for interacting with databases, as it allows us to write standard R code that is seamlessly translated into SQL operations on the backend. Alternatively, we have the option to employ the `DBI` package for directly sending SQL queries or employ a SQL chunk within an R Markdown/Quarto document.
+
+::: {.callout-note appearance="simple"}
+
+## Example
+
+For example, to create an SQLite database with the `airports.csv` file, we can use in a terminal:
+```{bash}
+#| eval: false
+sqlite3 -csv airports.sqlite3 '.import source/airports.csv airports'
+```
+
+The different parts of the commands are:
+
+* `sqlite3`: the name of the command
+
+* `-csv`: we want to load a csv file into the database
+
+* `airports.sqlite3`: the name of the database
+
+* `.import source/airports.csv airports`: we want to import the file `airports.csv` located in the `source` folder and gie it the name `airports`.
+
+:::
+
+Establishing the connection is achieved through the `DBI` package, with the right interface for the specific database, such as RSQLite in our case. Subsequently, the `tbl` function within the `dplyr` package allows us to apply `dplyr` operations to a remote table efficiently.
+
+::: {.callout-note appearance="simple"}
+
+## Example
+
+We connect to the database previously created and "convert" it to a tibble.
+
+```{r}
+#| class-output: outputcode
+#| eval: true
+connection <- DBI::dbConnect(
+    RSQLite::SQLite(), 
+    "source/airports.sqlite3"
+)
+airports_df <- dplyr::tbl(connection, "airports")
+```
+
+:::
+
+Data manipulations performed on SQL tables are designed to be lazy, meaning they will not execute the query or fetch the data unless explicitly requested. To execute the query and store the results temporarily in the database, we use `compute()`, or to bring the results into R, we use `collect()`. If we wish to view the query itself, we can do so with the `show_query()` function.
+
+::: {.callout-note appearance="simple"}
+
+## Example
+
+
+```{r}
+#| class-output: outputcode
+#| eval: true
+airports_df |> 
+    count(state) |> 
+    show_query()
+```
+
+```{r}
+#| class-output: outputcode
+#| eval: true
+airports_df |> 
+    count(state) |> 
+    collect()
+```
+
+:::
+
+With a database at our disposal, we can employ various strategies for analysing large datasets. In the upcoming tutorial, we will outline and apply these strategies.
+
+### Sample and model
+
+To perform sampling and modeling, we can reduce the dataset to a manageable size that can be efficiently downloaded, allowing the creation of a model based on this sample. Downsizing to thousands or even hundreds of thousands of data points can facilitate reasonable model runtimes while preserving statistical integrity.
+
+If preserving class balance is essential, or if we need to over- or under-sample a specific class, it is straightforward to stratify the dataset during the sampling process.
+
+### Chunk and pull
+
+In this approach, the data is divided into distinct units, or chunks, each of which is fetched individually and processed either sequentially, concurrently, or following recombination. This strategy shares a conceptual similarity with the MapReduce algorithm. Depending on the specific task, these chunks could represent time intervals, geographical regions, or logical entities such as distinct businesses, departments, products, or customer segments.
+
+### Push compute to data
+
+In this approach, the data is compressed within the database, and only the compressed dataset is transferred from the database to R. In order to achieve notable performance improvement, we can often conduct summarisation or filtering operations within the database before extracting the data into R.
+
+Occasionally, more complex tasks can also be performed, such as computing histograms, constructing models, and generating predictions from models.
+
+
+::: {.callout-note appearance="simple"}
+Note that you may also consider Spark to handle large data files using `.parquet` file. You can use the R package `sparklyr` to use Spark in R, but you also need to install a Spark/Hadoop backend.
+:::
+
+## Additional resources
+
+* Learn Bash in Y minutes [website](https://learnxinyminutes.com/docs/bash/).
+
+* Bash scripting [tutorial](https://linuxconfig.org/bash-scripting-tutorial-for-beginners).
+
+* Three stategies for working with Big Data in R [article](https://rviews.rstudio.com/2019/07/17/3-big-data-strategies-for-r/).
+
+* MapReduce wikipedia [page](https://en.wikipedia.org/wiki/MapReduce).
+
+<br><br>
+
+::: {style="font-size: 0.875em;"}
+[Back](/weeks/week-7.qmd) ⏎
+:::
