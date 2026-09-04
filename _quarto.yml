@@ -11,7 +11,7 @@ website:
 
   page-footer:
     right: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
-    left: "&copy; Copyright 2025, Steven Golovkine & Maeve Upton"
+    left: "&copy; Copyright 2026, Maeve Upton & Steven Golovkine"
     background: "#fdf5e6"
 
   sidebar:
@@ -32,24 +32,6 @@ website:
         contents:
           - href: weeks/week-1.qmd
             text: "1 - R Basics"
-          - href: weeks/week-2.qmd
-            text: "2 - Tidyverse" 
-          - href: weeks/week-3.qmd
-            text: "3 - ETL" 
-          - href: weeks/week-4.qmd
-            text: "4 - Data visualisation" 
-          - href: weeks/week-5.qmd
-            text: "5 - Reproducibility" 
-          - href: weeks/week-6.qmd
-            text: "6 - Interactivity" 
-          - href: weeks/week-7.qmd
-            text: "7 - Memory Issues" 
-          - href: weeks/week-8.qmd
-            text: "8 - Simulation"
-          - href: weeks/week-9.qmd
-            text: "9 - Code debugging"
-          - href: weeks/week-10.qmd
-            text: "10 - C++"
 
 
 bibliography: bibliography.bib
